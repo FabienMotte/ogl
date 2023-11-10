@@ -106,6 +106,7 @@ export class Shadow {
         for (const mesh of this.castMeshes) {
             mesh.depthProgram.dispose();
             delete mesh.depthProgram;
+            mesh.dispose();
         }
         this.castMeshes = [];
     }

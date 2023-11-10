@@ -112,8 +112,7 @@ export class Flowmap {
         this.mask.read = null;
         this.mask.write = null;
 
-        this.mesh.program.dispose();
-        this.mesh.geometry.dispose();
+        this.mesh.dispose();
         delete this.mesh;
     }
 }

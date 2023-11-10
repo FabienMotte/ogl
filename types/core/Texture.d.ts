@@ -88,4 +88,6 @@ export class Texture {
     bind(): void;
 
     update(textureUnit?: number): void;
+
+    dispose(): void;
 }

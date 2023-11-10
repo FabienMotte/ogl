@@ -64,4 +64,6 @@ export class Mesh<
     onAfterRender(f: MeshRenderCallback): this;
 
     draw(options?: { camera?: Camera }): void;
+
+    dispose(): void;
 }

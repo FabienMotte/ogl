@@ -81,4 +81,6 @@ export class Post {
             beforePostCallbacks: Function[];
         }>,
     ): void;
+
+    dispose(): void;
 }

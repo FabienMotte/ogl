@@ -37,4 +37,6 @@ export class GLTFSkin<TProgram extends Program = Program> extends Mesh {
     updateUniforms(): void;
 
     override draw(options?: { camera?: Camera }): void;
+
+    dispose(): void;
 }

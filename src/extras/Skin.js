@@ -104,6 +104,8 @@ export class Skin extends Mesh {
     }
 
     dispose() {
+        super.dispose();
+
         if (this.boneTexture) {
             this.boneTexture.dispose();
             delete this.boneTexture;

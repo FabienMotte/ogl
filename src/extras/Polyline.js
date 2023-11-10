@@ -118,8 +118,7 @@ export class Polyline {
     }
 
     dispose() {
-        this.mesh.program.dispose();
-        this.mesh.geometry.dispose();
+        this.mesh.dispose();
     }
 }
 

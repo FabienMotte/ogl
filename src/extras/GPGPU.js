@@ -120,7 +120,7 @@ export class GPGPU {
         delete this.geometry;
 
         for (const pass of this.passes) {
-            pass.program.dispose();
+            pass.mesh.dispose();
 
             // Dispose of textures
             for (const uniform of pass.uniforms) {

@@ -67,4 +67,9 @@ export class Mesh extends Transform {
         this.geometry.draw({ mode: this.mode, program: this.program });
         this.afterRenderCallbacks.forEach((f) => f && f({ mesh: this, camera }));
     }
+
+    dispose() {
+        this.geometry?.dispose();
+        this.program?.dispose();
+    }
 }

@@ -36,4 +36,6 @@ export class Flowmap {
     constructor(gl: OGLRenderingContext, options?: Partial<FlowmapOptions>);
 
     update(): void;
+
+    dispose(): void;
 }

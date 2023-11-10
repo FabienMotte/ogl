@@ -43,4 +43,6 @@ export class RenderTarget {
     constructor(gl: OGLRenderingContext, options?: Partial<RenderTargetOptions>);
 
     setSize(width: number, height: number): void;
+
+    dispose(): void;
 }

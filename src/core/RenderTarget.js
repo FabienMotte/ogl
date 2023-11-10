@@ -146,19 +146,19 @@ export class RenderTarget {
     }
 
     dispose() {
-        this.deleteFrameBuffer(this.buffer);
+        this.gl.deleteFrameBuffer(this.buffer);
         delete this.buffer;
 
         if (this.depthBuffer) {
-            this.deleteRenderbuffer(this.depthBuffer);
+            this.gl.deleteRenderbuffer(this.depthBuffer);
             delete this.depthBuffer;
         }
         if (this.stencilBuffer) {
-            this.deleteRenderbuffer(this.stencilBuffer);
+            this.gl.deleteRenderbuffer(this.stencilBuffer);
             delete this.stencilBuffer;
         }
         if (this.depthStencilBuffer) {
-            this.deleteRenderbuffer(this.depthStencilBuffer);
+            this.gl.deleteRenderbuffer(this.depthStencilBuffer);
             delete this.depthStencilBuffer;
         }
 

@@ -44,4 +44,6 @@ export class Shadow {
     setSize(options: { width?: number; height?: number }): void;
 
     render(options: { scene: Transform }): void;
+
+    dispose(): void;
 }

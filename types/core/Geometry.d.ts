@@ -85,5 +85,5 @@ export class Geometry {
 
     computeBoundingSphere(attr?: Partial<Attribute>): void;
 
-    remove(): void;
+    dispose(): void;
 }

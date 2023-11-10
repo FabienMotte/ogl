@@ -46,4 +46,6 @@ export class Polyline {
     updateGeometry(): void;
 
     resize(): void;
+
+    dispose(): void;
 }

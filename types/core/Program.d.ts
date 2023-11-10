@@ -54,5 +54,5 @@ export class Program {
 
     use(options?: { flipFaces?: boolean }): void;
 
-    remove(): void;
+    dispose(): void;
 }

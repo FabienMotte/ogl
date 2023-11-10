@@ -46,4 +46,6 @@ export class GPGPU {
     addPass(options?: Partial<GPGPUPass>): GPGPUPass;
 
     render(): void;
+
+    dispose(): void;
 }
