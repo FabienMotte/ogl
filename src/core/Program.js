@@ -203,12 +203,12 @@ export class Program {
         this.gl.deleteProgram(this.program);
         delete this.program;
 
-        this.uniformLocations.clear();
+        this.uniformLocations?.clear();
 
-        this.attributeLocations.forEach((location) => {
+        this.attributeLocations?.forEach((location) => {
             this.gl.disableVertexAttribArray(location);
         });
-        this.attributeLocations.clear();
+        this.attributeLocations?.clear();
     }
 }
 
